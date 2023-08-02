@@ -50,7 +50,7 @@ steps:
 - task: AzurePowerShell@5
   displayName: 'Azure PowerShell Script - Create Resource Group and Function App'
   inputs:
-    azureSubscription: 'Amantya-LM (3718112c-afe8-4000-8156-64d160081570)'
+    azureSubscription: 'web-connection'
     ScriptType: 'FilePath'
     ScriptPath: 'deploy.ps1'
     ScriptArguments: '-ResourceGroupName MyResourceGroup -FunctionAppName MyFunctionApp -Location East US -ClientId $(azureClientId) -ClientSecret $(azureClientSecret) -TenantId $(azureTenantId) -SubscriptionId 3718112c-afe8-4000-8156-64d160081570'
